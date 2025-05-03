@@ -1,0 +1,258 @@
+{
+  "favorites": [],
+  "teams": [
+    {
+      "id": "5cef",
+      "name": "412",
+      "pokemons": [
+        {
+          "id": 4,
+          "name": "charmander",
+          "sprites": {
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+            "other": {
+              "official-artwork": {
+                "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+              }
+            }
+          },
+          "types": [
+            "fire"
+          ],
+          "stats": {
+            "hp": 39,
+            "attack": 52,
+            "defense": 43,
+            "specialAttack": 60,
+            "specialDefense": 50,
+            "speed": 65
+          },
+          "moves": [
+            "mega-punch",
+            "fire-punch",
+            "thunder-punch",
+            "scratch"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "venusaur",
+          "sprites": {
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+            "other": {
+              "official-artwork": {
+                "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+              }
+            }
+          },
+          "types": [
+            "grass",
+            "poison"
+          ],
+          "stats": {
+            "hp": 80,
+            "attack": 82,
+            "defense": 83,
+            "specialAttack": 100,
+            "specialDefense": 100,
+            "speed": 80
+          }
+        },
+        {
+          "id": 9,
+          "name": "blastoise",
+          "sprites": {
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+            "other": {
+              "official-artwork": {
+                "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+              }
+            }
+          },
+          "types": [
+            "water"
+          ],
+          "stats": {
+            "hp": 79,
+            "attack": 83,
+            "defense": 100,
+            "specialAttack": 85,
+            "specialDefense": 105,
+            "speed": 78
+          }
+        }
+      ],
+      "createdAt": "2025-04-24T15:11:22.791Z"
+    },
+    {
+      "id": "257f",
+      "name": "1511",
+      "pokemons": [
+        {
+          "id": 3,
+          "name": "venusaur",
+          "sprites": {
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+            "other": {
+              "official-artwork": {
+                "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+              }
+            }
+          },
+          "types": [
+            "grass",
+            "poison"
+          ],
+          "stats": {
+            "hp": 80,
+            "attack": 82,
+            "defense": 83,
+            "specialAttack": 100,
+            "specialDefense": 100,
+            "speed": 80
+          }
+        },
+        {
+          "id": 4,
+          "name": "charmander",
+          "sprites": {
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+            "other": {
+              "official-artwork": {
+                "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+              }
+            }
+          },
+          "types": [
+            "fire"
+          ],
+          "stats": {
+            "hp": 39,
+            "attack": 52,
+            "defense": 43,
+            "specialAttack": 60,
+            "specialDefense": 50,
+            "speed": 65
+          }
+        }
+      ],
+      "createdAt": "2025-04-24T16:23:20.588Z"
+    },
+    {
+      "id": "b6fe",
+      "name": "616",
+      "pokemons": [
+        {
+          "id": 4,
+          "name": "charmander",
+          "sprites": {
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+            "other": {
+              "official-artwork": {
+                "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+              }
+            }
+          },
+          "types": [
+            "fire"
+          ],
+          "stats": {
+            "hp": 39,
+            "attack": 52,
+            "defense": 43,
+            "specialAttack": 60,
+            "specialDefense": 50,
+            "speed": 65
+          },
+          "moves": [
+            "mega-punch",
+            "fire-punch",
+            "thunder-punch",
+            "scratch"
+          ]
+        }
+      ],
+      "createdAt": "2025-04-24T16:37:52.520Z"
+    }
+  ],
+  "battle_history": [
+    {
+      "id": "battle-1745516427967",
+      "type": "single",
+      "playerPokemon": {
+        "id": 4,
+        "name": "charmander",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+      },
+      "opponentPokemon": {
+        "id": 333,
+        "name": "swablu",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/333.png"
+      },
+      "winner": 4,
+      "difficulty": "normal",
+      "stats": {
+        "totalDamageDealt": 22,
+        "criticalHits": 0,
+        "superEffectiveHits": 0,
+        "pokemonFainted": 0
+      },
+      "log": [
+        {
+          "text": "Battle started!",
+          "type": "info"
+        },
+        {
+          "text": "charmander goes first!",
+          "type": "info",
+          "id": 1745516419408
+        },
+        {
+          "text": "charmander used mega punch and dealt 22 damage!",
+          "type": "attack",
+          "id": 1745516424744
+        },
+        {
+          "text": "swablu's fury attack missed!",
+          "type": "warning",
+          "id": 1745516425747
+        }
+      ],
+      "date": "2025-04-24T17:40:27.967Z"
+    },
+    {
+      "id": "battle-1745517655578",
+      "type": "single",
+      "playerPokemon": {
+        "id": 6,
+        "name": "charizard",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+      },
+      "opponentPokemon": {
+        "id": 304,
+        "name": "aron",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png"
+      },
+      "winner": 304,
+      "difficulty": "hard",
+      "stats": {
+        "totalDamageDealt": 0,
+        "criticalHits": 0,
+        "superEffectiveHits": 0,
+        "pokemonFainted": 0
+      },
+      "log": [
+        {
+          "text": "Battle started!",
+          "type": "info"
+        },
+        {
+          "text": "charizard goes first!",
+          "type": "info",
+          "id": 1745517648791
+        }
+      ],
+      "date": "2025-04-24T18:00:55.578Z"
+    }
+  ]
+}

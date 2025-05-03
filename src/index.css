@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Orbitron:wght@500&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --color-primary: rgb(37, 99, 235);
+  --color-secondary: rgb(124, 58, 237);
+  --color-accent: rgb(217, 70, 239);
+  --color-background: rgba(101, 195, 250, 0.815);
+  --color-text: rgb(226, 232, 240);
+}
+
+body {
+  font-family: "Exo 2", Ortem, sans-serif;
+  background-color: #070b1a;
+  color: #e4e8f2;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", Ortem, sans-serif;
+  font-weight: bold;
+}
+
+.space-card {
+  border-radius: 0.5rem;
+  background: linear-gradient(to bottom right, #1e293b, #0f172a);
+  border: 1px solid rgba(99, 44, 44, 0.842);
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
+}
+
+.space-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(248, 185, 185, 0),
+    transparent
+  );
+  transform: rotate(30deg);
+  animation: shine 6s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.space-button {
+  border-radius: 0.375rem;
+  background: linear-gradient(to right, #1f0a0a6e, #eb42426b);
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 5px rgba(250, 13, 13, 0.712);
+  box-shadow: 0 0 10px rgba(253, 214, 214, 0.568),
+    inset 0 0 5px rgba(255, 255, 255, 0);
+}
+
+.space-button:hover {
+  background: linear-gradient(to right, #88828200, #e02e2e);
+  box-shadow: 0 0 15px rgba(254, 254, 255, 0.13),
+    inset 0 0 5px rgba(255, 255, 255, 0.507);
+  transform: translateY(-2px);
+}
+
+.space-button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 5px rgba(107, 78, 78, 0.3), inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.space-input {
+  background-color: rgba(141, 76, 76, 0.747);
+  border: 1px solid rgba(255, 44, 44, 0.3);
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  color: white;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3), 0 0 5px rgba(99, 37, 37, 0.548);
+}
+
+.space-input::placeholder {
+  color: #94a3b8; /* slate-400 */
+}
+
+.space-input:focus {
+  box-shadow: 0 0 0 2px rgba(105, 32, 32, 0.5);
+}
+
+.battle-arena {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: linear-gradient(to bottom, #702d2dee, #1e293b);
+  box-shadow: inset 0 0 50px rgba(145, 59, 59, 0.507);
+}
+
+.battle-arena::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.3;
+  mix-blend-mode: screen;
+}
+
+.pokemon-card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+.sprite-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  background: radial-gradient(
+    circle,
+    rgba(248, 196, 196, 0),
+    rgba(252, 213, 213, 0)
+  );
+}
+
+.sprite-container img {
+  max-height: 100%;
+  object-fit: contain;
+  transition: all 0.3s;
+  filter: drop-shadow(0 0 3px rgba(250, 142, 142, 0.719));
+}
+
+.sprite-container img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.badge-normal {
+  background: #9ca3af;
+  color: #1f2937;
+}
+.badge-fire {
+  background: #ef4444;
+  color: white;
+}
+.badge-water {
+  background: #3b82f6;
+  color: white;
+}
+.badge-electric {
+  background: #facc15;
+  color: #1f2937;
+}
+.badge-grass {
+  background: #22c55e;
+  color: white;
+}
+.badge-ice {
+  background: #bae6fd;
+  color: #1e293b;
+}
+.badge-fighting {
+  background: #b91c1c;
+  color: white;
+}
+.badge-poison {
+  background: #a855f7;
+  color: white;
+}
+.badge-ground {
+  background: #ca8a04;
+  color: white;
+}
+.badge-flying {
+  background: #c7d2fe;
+  color: #1e293b;
+}
+.badge-psychic {
+  background: #ec4899;
+  color: white;
+}
+.badge-bug {
+  background: #16a34a;
+  color: white;
+}
+.badge-rock {
+  background: #78350f;
+  color: white;
+}
+.badge-ghost {
+  background: #6b21a8;
+  color: white;
+}
+.badge-dragon {
+  background: #4338ca;
+  color: white;
+}
+.badge-dark {
+  background: #1f2937;
+  color: white;
+}
+.badge-steel {
+  background: #6b7280;
+  color: white;
+}
+.badge-fairy {
+  background: #f9a8d4;
+  color: #1e293b;
+}
+
+.stat-bar {
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: #374151;
+  overflow: hidden;
+}
+
+.stat-bar-fill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 1s ease-out;
+}
+
+.stat-hp {
+  background: #22c55e;
+}
+.stat-attack {
+  background: #ef4444;
+}
+.stat-defense {
+  background: #3b82f6;
+}
+.stat-special-attack {
+  background: #a855f7;
+}
+.stat-special-defense {
+  background: #14b8a6;
+}
+.stat-speed {
+  background: #facc15;
+}
+
+.shake-animation {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.attack-animation {
+  animation: attack 0.5s ease-in-out;
+}
+
+@keyframes attack {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.damage-animation {
+  animation: damage 0.3s ease-in-out;
+}
+
+@keyframes damage {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.victory-animation {
+  animation: victory 1s ease-in-out infinite;
+}
+
+@keyframes victory {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
