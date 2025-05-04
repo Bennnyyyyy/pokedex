@@ -14,7 +14,7 @@ function PokemonCard({ pokemon, showFavoriteButton = true }) {
   const [error, setError] = useState(null);
   const teamSelectRef = useRef(null);
   
-  // Close team select when clicking outside
+  // Close team select when doing clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (teamSelectRef.current && !teamSelectRef.current.contains(event.target)) {
